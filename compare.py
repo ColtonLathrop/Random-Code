@@ -45,7 +45,7 @@ def gLists(testInput,workingInput):
     iniTest = open(testInput).readlines()
     os.chdir(cwdWorking)
     iniWorking = open(workingInput).readlines()
-    resultsTxt.write(testInput + '\n')
+    resultsTxt.write('\n' + testInput + '\n')
     #resets prior lists
     #create lists of both files line by line
     #two inputs working files and test files
@@ -59,13 +59,13 @@ def compare(list1, list2):
     for i in range(0, len(list3)):
         if ((list3[i] not in list1) or (list3[i] not in list2)) and (list3[i] not in outputList):
              outputList[len(outputList):] = [list3[i]]
-    for h in outputList:
-        print 'success1'
-        resultsTxt.write("%s\n" % outputList)
+    resultsTxt.write("%s" % outputList)
+    #for h in outputList:
+        #print 'success1'
+        #resultsTxt.write("%s\n" % outputList)
     #yy = set(compWorking)
     #temp = [x for x in compTest if x not in yy]
     #compare lists line by lines
-    #writing any differences to results.txt separated by ::::
     return
 
 resultTxt()
