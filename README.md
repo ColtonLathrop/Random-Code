@@ -1,3 +1,3 @@
-# Learn_repository
+# learning_repository
 #Various programs/functions for various usages.
 
