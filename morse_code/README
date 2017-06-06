@@ -1,5 +1,6 @@
-Script for conversion standard text to morse code
+Script for conversion standard text to morse code.
 
-Conversion is working
-
-Output format need tuning to match standardized morse code layout
+Script includes:
+-ini parsing for parameters
+-intermediate & basic list manipulation
+-string conversion and logical parsing
