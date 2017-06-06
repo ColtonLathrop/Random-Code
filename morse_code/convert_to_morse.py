@@ -28,8 +28,9 @@ def convert_target():
         try:
             a = combined_alphabet.index(i)
         except ValueError:
-            outputfile.write(" ")
+            outputfile.write("/")
         outputfile.write(combined_morse[a])
+        outputfile.write(" ")
 
     '''for x in templist:
         tempvar0 = 0
